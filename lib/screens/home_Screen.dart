@@ -12,21 +12,16 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (ctx) => CounterVM(),
-      child: Scaffold(
-        floatingActionButton: Consumer<CounterVM>(
-          builder: (ctx, c, child) => FloatingActionButton(
-            child: Icon(Icons.add),
-            onPressed: () {
-              c.addOne();
-            },
-          ),
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: () {
+          Provider.of<CounterVM>(context, listen: false).addOne();
+          },
         ),
-        body: Center(
-          child: Consumer<CounterVM>(
-            builder: (ctx, c, child) => Text(c.counter.toString()) ,
-          ),
+      body: Center(
+        child: Consumer<CounterVM>(
+          builder: (ctx, c, child) => Text(c.counter.toString(),style: TextStyle(fontSize: 50),) ,
         ),
       ),
     );
