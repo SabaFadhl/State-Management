@@ -1,6 +1,7 @@
 # 🛒 Simple Flutter Cart App
 
 A basic Flutter application demonstrating **state management using Provider** for cart functionality.
+
 <img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/ee14fbfc-5964-40c6-81d0-effab9b4a2b1" />
 <img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/f91edd74-e48c-4843-b121-318f2af60316" />
 
@@ -86,4 +87,5 @@ flutter:
 
 Developed by **Saba Fadhl**  
 Flutter Developer
+
 
